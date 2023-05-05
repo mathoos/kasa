@@ -1,0 +1,21 @@
+nav{
+    display : flex;
+    align-items : center;
+    justify-content: space-between;
+    padding : 0 5.2vw;
+}
+
+.logo{
+    width : 10.9vw;
+    height : auto;
+}
+
+.links{
+    display : flex;
+    gap : 2.9vw;
+}
+
+.links_link{
+    font-size : 24px;
+    font-weight : 500;
+}

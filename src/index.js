@@ -1,25 +1,27 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
+import './style/index.css';
+import Home from './components/Home';
 import Fiche from './pages/Fiche'
 import Error from './pages/Error'
 import About from './pages/About'
-import Header from './components/Header'
 
 
-ReactDOM.render(
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
   <React.StrictMode>
     <Router>
-      <Header />
-      <Routes>
+      <Routes>      
         <Route path="/" element={<Home/>}/>
-        <Route path="/fiche" element={<Fiche/>}/>    
         <Route path="/about" element={<About/>}/>
+        <Route path="/fiche/:id" element={<Fiche/>}/>          
         <Route path="*" element={<Error/>} />
       </Routes>
     </Router>
   </React.StrictMode>,
-  document.getElementById('root')
 )
 

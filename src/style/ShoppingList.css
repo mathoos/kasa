@@ -1,0 +1,11 @@
+.shoppingList{
+    display : grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap : 2.6vw;
+    padding : 2.6vw;
+    border-radius : 25px;
+    background-color: rgba(246, 246, 246, 1);
+    margin : 0 5.2vw;
+}
+
