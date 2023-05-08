@@ -1,0 +1,44 @@
+.logement{
+    display : flex;
+    flex-direction: column;
+    gap : 1.8vh;
+    padding : 0 5.2vw;
+    background-color: orange;
+}
+
+.logement_bloc{
+    display : flex;
+    justify-content: space-between;
+    border : 1px solid black;
+}
+
+
+.logement_bloc-title{
+    border : 1px solid yellow;
+}
+
+.logement_bloc-title--principal{
+    font-size : 36px;
+    color : rgba(255, 96, 96, 1);
+    font-weight : 500;
+}
+
+
+.logement_bloc-host{
+    display : flex;
+    align-items : center;
+    gap : 0.5vw;
+}
+
+.logement_bloc-host--img{
+    width : 3.3vw;
+    height : 3.3vw;
+    border-radius : 50%;
+    background-color: grey;
+}
+
+.logement_bloc-host--name{
+    width : 3.2vw;
+    text-align : right;
+    border : 1px solid black;
+}

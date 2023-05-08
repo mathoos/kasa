@@ -1,15 +1,16 @@
 import '../style/Banner.css'
-import bannerHome from '../assets/bannerHome.jpg'
 
 
-function Banner() {
+function Banner(props) {
+    const { title, imageSrc } = props;
+
     return(
         <div className="banner">
             <figure className="banner_img">
-                <img src={bannerHome} alt="Bannière de Kasa"/>
+                <img src={imageSrc} alt="Bannière de Kasa"/>
             </figure>
             
-            <h1>Chez vous, partout, et ailleurs</h1>
+            <h1 className="banner_title">{title}</h1>
         </div>
     )
 }
