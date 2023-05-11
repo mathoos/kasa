@@ -1,0 +1,40 @@
+.collapse{
+    width : 100%;
+
+    &_container-top{
+        display : flex;
+        align-items : center;
+        justify-content: space-between;
+        background-color: rgba(255, 96, 96, 1);
+        border-radius : 5px;
+        padding : 1vh .9vw;
+        cursor : pointer;
+
+        &--title{
+            font-weight : 400;
+            line-height : 1;
+            color: rgba(255, 255, 255, 1);
+            font-weight : 500;
+        }
+
+        &--icon{
+            width : 1.2vw;
+            height : auto;
+            transition : .3s ease;
+
+            &.expanded {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &_container-bottom{
+        background-color: rgba(246, 246, 246, 1);
+        border-radius : 0 0 5px 5px;
+        padding : 3.3vh .9vw 1.7vh .9vw;    
+    }
+}
+
+
+
+

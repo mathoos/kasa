@@ -1,6 +1,6 @@
 import Nav from '../components/Nav'
-import '../style/index.css'
-import '../style/Error.css'
+import '../style/index.scss'
+import '../style/Error.scss'
 import { Link } from 'react-router-dom'
 
 function Error() {

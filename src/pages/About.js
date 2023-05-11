@@ -3,21 +3,22 @@ import Nav from '../components/Nav'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import Collapse from '../components/Collapse'
-import '../style/index.css'
-import '../style/About.css'
+import '../style/index.scss'
+import '../style/About.scss'
 import bannerAbout from '../assets/bannerAbout.jpg'
 
 function About() {
-  const [isOpenArray, setIsOpenArray] = useState([]);
+  const [isOpen, setIsOpen] = useState([]);
 
   const toggle = (index) => {
-    const newIsOpenArray = [...isOpenArray];
-    newIsOpenArray[index] = !newIsOpenArray[index];
-    setIsOpenArray(newIsOpenArray);
+    const newIsOpen = [...isOpen];
+    newIsOpen[index] = !newIsOpen[index];
+    setIsOpen(newIsOpen);
   };
 
+  // On créé un tableau de 4 éléments tous initialisé à false (chaque composant Collapse est fermé)
   useEffect(() => {
-    setIsOpenArray(new Array(4).fill(false)); // 3 états initialement fermés
+    setIsOpen(new Array(4).fill(false)); 
   }, []);
 
   return (
@@ -25,19 +26,19 @@ function About() {
       <Nav/>
       <Banner imageSrc={bannerAbout}/>
       <div className="container_collapse">
-        <Collapse title="Fiabilité" index={0} isOpen={isOpenArray[0]} toggle={toggle}>
+        <Collapse title="Fiabilité" index={0} isOpen={isOpen[0]} toggle={toggle}>
           <p className="collapse_container-content">Les annonces postées sur Kasa garantissent une fiabilité totale. 
           Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
         </Collapse>
-        <Collapse title="Respect" index={1} isOpen={isOpenArray[1]} toggle={toggle}>
+        <Collapse title="Respect" index={1} isOpen={isOpen[1]} toggle={toggle}>
           <p className="collapse_container-content">La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire 
           ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
         </Collapse>
-        <Collapse title="Service" index={2} isOpen={isOpenArray[2]} toggle={toggle}>
+        <Collapse title="Service" index={2} isOpen={isOpen[2]} toggle={toggle}>
           <p className="collapse_container-content">Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. 
           N'hésitez pas à nous contacter si vous avez la moindre question.</p>
         </Collapse>
-        <Collapse title="Sécurité" index={3} isOpen={isOpenArray[3]} toggle={toggle}>
+        <Collapse title="Sécurité" index={3} isOpen={isOpen[3]} toggle={toggle}>
           <p className="collapse_container-content">La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement 
           correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à 
           l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. 

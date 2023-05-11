@@ -7,15 +7,14 @@ footer{
     width : 100%;
     background-color: rgba(0, 0, 0, 1);
     padding : 6.4vh 0;
-}
 
-.footer_logo{
-    width : 6.3vw;
-    height : auto;
-}
+    &_logo{
+        width : 6.3vw;
+        height : auto;
+    }
 
-.footer_copyright{
-    font-size : 24px;
-    color : rgba(255, 255, 255, 1);
+    &_copyright{
+        font-size : 24px;
+        color : rgba(255, 255, 255, 1);
+    }  
 }
-

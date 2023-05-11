@@ -2,7 +2,7 @@ import Nav from '../components/Nav'
 import Banner from '../components/Banner'
 import ShoppingList from '../components/ShoppingList'
 import Footer from '../components/Footer'
-import '../style/index.css'
+import '../style/index.scss'
 import bannerHome from '../assets/bannerHome.jpg'
 
 function Home() {

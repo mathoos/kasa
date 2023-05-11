@@ -1,6 +1,6 @@
 import { houseList } from '../data/Data'
 import HouseItem from './houseItem'
-import '../style/ShoppingList.css'
+import '../style/ShoppingList.scss'
 import { Link } from 'react-router-dom'
 
 function ShoppingList(){

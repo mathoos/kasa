@@ -1,0 +1,30 @@
+.container_error{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow : 1;
+    gap : 4vh;
+    width : 100%;
+    padding : 10vh 0 15vh 0;
+
+    &-title{
+        font-size : 288px;
+        font-weight : 700;
+        color : rgba(255, 96, 96, 1);
+        text-align : center;
+        line-height : .8;
+    }
+
+    &-txt{
+        font-size : 36px;
+        font-weight : 500;
+        margin-bottom : 15vh;
+    }
+
+    &-link{
+        font-size : 18px;
+        font-weight : 500;
+        text-decoration: underline;
+    }
+}

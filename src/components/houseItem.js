@@ -1,4 +1,4 @@
-import '../style/HouseItem.css'
+import '../style/HouseItem.scss'
 
 function HouseItem({ title, cover }) {
 	return (
