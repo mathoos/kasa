@@ -1,4 +1,4 @@
-footer{
+.footer{
     display : flex;
     flex-direction: column;
     align-items : center;
@@ -8,13 +8,23 @@ footer{
     background-color: rgba(0, 0, 0, 1);
     padding : 6.4vh 0;
 
+    @media screen and (max-width: 900px) {
+        padding : 7.8vh 0;
+    }
+
     &_logo{
         width : 6.3vw;
         height : auto;
+        @media screen and (max-width: 900px) {
+            width : 28.7vw;
+        }
     }
 
     &_copyright{
         font-size : 24px;
         color : rgba(255, 255, 255, 1);
+        @media screen and (max-width: 900px) {
+            font-size : 12px;
+        }
     }  
 }

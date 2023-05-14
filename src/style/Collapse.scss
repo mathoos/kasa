@@ -9,18 +9,26 @@
         border-radius : 5px;
         padding : 1vh .9vw;
         cursor : pointer;
+        @media screen and (max-width: 900px) {
+            padding : 1vh 15px;
+        }
 
         &--title{
-            font-weight : 400;
             line-height : 1;
             color: rgba(255, 255, 255, 1);
             font-weight : 500;
+            @media screen and (max-width: 900px) {
+                font-size : 13px;
+            }
         }
 
         &--icon{
             width : 1.2vw;
             height : auto;
             transition : .3s ease;
+            @media screen and (max-width: 900px) {
+                width : 3.7vw;
+            }
 
             &.expanded {
                 transform: rotate(180deg);
@@ -32,6 +40,9 @@
         background-color: rgba(246, 246, 246, 1);
         border-radius : 0 0 5px 5px;
         padding : 3.3vh .9vw 1.7vh .9vw;    
+        @media screen and (max-width: 900px) {
+            padding: 3vh 15px 1.5vh 15px;
+        }
     }
 }
 

@@ -9,8 +9,12 @@ function Banner(props) {
             <figure className="banner_img">
                 <img src={imageSrc} alt="Bannière de Kasa"/>
             </figure>
+
+            <div className="banner_title">
+                <h1>{title}</h1>
+            </div>
             
-            <h1 className="banner_title">{title}</h1>
+            
         </div>
     )
 }

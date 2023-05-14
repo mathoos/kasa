@@ -4,9 +4,16 @@
     justify-content: space-between;
     padding : 0 5.2vw;
 
+    @media screen and (max-width: 900px) {
+        padding : 0 30px;
+    }
+
     &_logo{
         width : 10.9vw;
         height : auto;
+        @media screen and (max-width: 900px) {
+            width : 34.1vw;
+        }
     }
 
     &_links{
@@ -16,6 +23,10 @@
         &-link{
             font-size : 24px;
             font-weight : 500;
+            @media screen and (max-width: 900px) {
+                font-size : 12px;
+                text-transform: uppercase;
+            }
 
             &.active{
                 text-decoration: underline;

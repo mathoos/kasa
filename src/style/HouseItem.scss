@@ -6,6 +6,11 @@
     border-radius : 25px;
     overflow : hidden;
     background-color: rgba(255, 96, 96, 1); 
+
+    @media screen and (max-width: 900px) {
+        height : 33.5vh;
+        border-radius : 10px;
+    }
     
     &::after{
         position : absolute;
@@ -31,5 +36,11 @@
         color : #FFFFFF;
         line-height : 1.4;
         z-index : 5;
+        @media screen and (max-width: 900px) {
+            font-size : 18px;
+            bottom : 20px;
+            left : 20px;
+            width : 80%;
+        }
     }
 }

@@ -6,12 +6,18 @@
     height : 44vh;
     border-radius : 25px;
     overflow : hidden;
+    @media screen and (max-width: 900px) {  
+        height : 33.5vh;
+    }
 
     &-image{
         width : 100%;
         height : auto;
         object-position: center;
         object-fit: cover;
+        @media screen and (max-width: 900px) {
+            height : 100%;
+        }
     }
 
     &-arrow{
@@ -19,14 +25,23 @@
         width : 2.4vw;
         height : auto;
         cursor : pointer;
+        @media screen and (max-width: 900px) {
+            width : 2.8vw;
+        }
 
         &_left{
             left : 1.1vw;
-            transform : rotate(180deg)
+            transform : rotate(180deg);
+            @media screen and (max-width: 900px) {
+                left : 15px;
+            }
         }
 
         &_right{
             right : 1.1vw;
+            @media screen and (max-width: 900px) {
+                right : 15px;
+            }
         }
     }
 }

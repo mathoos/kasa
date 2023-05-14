@@ -52,7 +52,7 @@ function Fiche() {
 					<div className="logement_bloc">          
 						<div className="logement_bloc-title">
 							<h1 className="logement_bloc-title--principal">{logement.title}</h1>
-							<p>{logement.location}</p>
+							<p className="logement_bloc-title--secondaire">{logement.location}</p>
 						</div>
 						<div className="logement_bloc-host">
 							<p className="logement_bloc-host--name">{logement.host.name}</p>
