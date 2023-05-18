@@ -44,4 +44,14 @@
             }
         }
     }
+
+    &-pagination{
+        position : absolute;
+        bottom : 2.3vh;
+        left : 50%;
+
+        p{
+            color : rgba(255, 255, 255, 1);
+        }
+    }
 }

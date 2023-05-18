@@ -5,26 +5,39 @@
     justify-content: space-between;
     flex-grow : 1;
     gap : 4vh;
-    width : 100%;
     padding : 10vh 0 15vh 0;
+    @media screen and (max-width: 900px) {
+        justify-content: center;
+        padding : 0 30px;       
+      }
 
     &-title{
-        font-size : 288px;
+        font-size : 230px;
         font-weight : 700;
         color : rgba(255, 96, 96, 1);
         text-align : center;
         line-height : .8;
+        @media screen and (max-width: 900px) {
+            font-size : 100px;
+        }
     }
 
     &-txt{
         font-size : 36px;
         font-weight : 500;
         margin-bottom : 15vh;
+        text-align : center;
+        @media screen and (max-width: 900px) {
+            margin-bottom : 17.1vh;
+            font-size : 20px;
+        }
+
     }
 
     &-link{
         font-size : 18px;
         font-weight : 500;
         text-decoration: underline;
+        text-align: center;
     }
 }

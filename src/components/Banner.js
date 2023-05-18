@@ -12,9 +12,7 @@ function Banner(props) {
 
             <div className="banner_title">
                 <h1>{title}</h1>
-            </div>
-            
-            
+            </div>  
         </div>
     )
 }

@@ -1,8 +1,9 @@
 .container_collapse{
   display : flex;
   flex-direction: column;
+  flex-grow : 1;
   gap : 2.7vh;
-  margin : 0 15vw;
+  margin : 0 15vw; 
 }
 
 .collapse_container-content{

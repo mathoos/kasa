@@ -14,26 +14,15 @@ function Slider({slides}) {
   return (
     <div className="slider">
       {showArrows && (
-        <img 
-          onClick={() => setCount(modulo(count - 1, slides.length))}
-          className="slider-arrow slider-arrow_left" 
-          src={arrow} 
-          alt="" 
-        />
+        <img onClick={() => setCount(modulo(count - 1, slides.length))} className="slider-arrow slider-arrow_left" src={arrow} alt=""/>
       )}
-      <img 
-        className="slider-image" 
-        src={slides[count]} 
-        alt="" 
-      />
+      <img className="slider-image" src={slides[count]} alt="" />
       {showArrows && (
-        <img 
-          onClick={() => setCount(modulo(count + 1, slides.length))} 
-          className="slider-arrow slider-arrow_right" 
-          src={arrow} 
-          alt="" 
-        />
+        <img onClick={() => setCount(modulo(count + 1, slides.length))} className="slider-arrow slider-arrow_right" src={arrow} alt=""/>
       )}
+      <div className="slider-pagination">
+        <p>{count + 1}/{slides.length}</p>
+      </div>
     </div>
   );
 }
