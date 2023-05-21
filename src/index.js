@@ -2,10 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './style/index.scss';
-import Home from './pages/Home';
-import Fiche from './pages/Fiche'
-import Error from './pages/Error'
-import About from './pages/About'
+import Home from './pages/Home/Home';
+import Fiche from './pages/Fiche/Fiche'
+import Error from './pages/Error/Error'
+import About from './pages/About/About'
 
 
 

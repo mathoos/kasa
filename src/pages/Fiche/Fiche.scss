@@ -1,0 +1,108 @@
+.logement{
+    display : flex;
+    flex-direction: column;
+    gap : 5vh;
+    padding : 0 5.2vw;
+    min-height : 80vh;
+    @media screen and (max-width: 900px) {
+        gap : 2.1vh;
+        padding : 0 30px;
+    }
+
+    &_bloc{
+        display : flex;
+        justify-content: space-between;
+        gap : 3.9vw;
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            gap : 2.1vh;
+        }
+
+        &-content{
+            display : flex;
+            flex-direction: column;
+            justify-content : space-between;
+            gap : 1.8vh;
+            @media screen and (max-width: 900px) {
+                gap : 1.3vh;
+            }
+
+            &:nth-child(2){
+                @media screen and (max-width: 900px) {
+                    flex-direction: row-reverse;
+                }
+            }
+
+            &--title{
+                .titre-principal{
+                    font-size : 36px;
+                    color : rgba(255, 96, 96, 1);
+                    font-weight : 500;
+                    @media screen and (max-width: 900px) {
+                        font-size : 18px;
+                    }
+                }
+        
+                .titre-secondaire{
+                    font-size : 14px;
+                    margin-bottom : 3.2vh;
+                    @media screen and (max-width: 900px) {
+                        margin-bottom : 0;
+                    }
+                }
+            }
+
+            &--tag{
+                display : flex;
+                flex-wrap: wrap;
+                gap : .5vw;
+                width : 100%; 
+                @media screen and (max-width: 900px) {
+                    gap : 2.3vw;
+                }
+            }
+
+            &--host{
+                display : flex;
+                justify-content: flex-end;
+                align-items : center;
+                gap : 1vw;
+                @media screen and (max-width: 900px) {
+                    gap : 2.5vw;
+                }
+    
+                .host-img{
+                    width : 3.3vw;
+                    height : 3.3vw;
+                    border-radius : 50%;
+                    @media screen and (max-width: 900px) {
+                        width : 7.5vw;
+                        height : 7.5vw;
+                    }
+                }
+    
+                .host-name{
+                    width : 7vw;
+                    text-align : right;
+                    @media screen and (max-width: 900px) {
+                        width : 20vw;
+                    }
+                }
+            }
+    
+            &--rating{
+                display : flex;
+                gap : 1vw;
+    
+                svg{
+                    width : 1.3vw;
+                    height : auto;
+                    @media screen and (max-width: 900px) {
+                        width : 3.3vw;
+                    }
+                }
+            }
+        }  
+    } 
+}
+

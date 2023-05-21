@@ -1,11 +1,11 @@
 import { useState , useEffect} from 'react'
-import Nav from '../components/Nav'
-import Banner from '../components/Banner'
-import Footer from '../components/Footer'
-import Collapse from '../components/Collapse'
-import '../style/index.scss'
-import '../style/About.scss'
-import bannerAbout from '../assets/bannerAbout.jpg'
+import Nav from '../../components/Nav'
+import Banner from '../../components/Banner'
+import Footer from '../../components/Footer'
+import Collapse from '../../components/Collapse'
+import '../../style/index.scss'
+import '../About/About.scss'
+import bannerAbout from '../../assets/bannerAbout.jpg'
 
 function About() {
   const [isOpen, setIsOpen] = useState([]);
