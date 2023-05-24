@@ -1,5 +1,5 @@
-import logo from '../assets/logo.svg'
-import '../style/Nav.scss'
+import logo from '../../assets/logo.svg'
+import '../Nav/Nav.scss'
 import { Link , useLocation} from 'react-router-dom'
 
 function Nav() {

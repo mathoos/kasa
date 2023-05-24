@@ -1,5 +1,5 @@
-import '../style/Collapse.scss'
-import chevron from '../assets/chevron-up-solid.svg'
+import '../Collapse/Collapse.scss'
+import chevron from '../../assets/chevron-up-solid.svg'
 
 
 function Collapse({ title, children, index, isOpen = false, toggle }) {

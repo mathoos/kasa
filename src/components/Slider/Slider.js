@@ -1,5 +1,5 @@
-import '../style/Slider.scss'
-import arrow from "../assets/arrow.svg"
+import '../Slider/Slider.scss'
+import arrow from "../../assets/arrow.svg"
 import { useState } from "react";
 import PropTypes from 'prop-types';
 
@@ -10,6 +10,7 @@ function modulo(n, m) {
 function Slider({slides}) {
   const [count, setCount] = useState(0);
   const showArrows = slides.length > 1;
+  const showPagination = slides.length > 1;
 
   return (
     <div className="slider">
@@ -20,9 +21,11 @@ function Slider({slides}) {
       {showArrows && (
         <img onClick={() => setCount(modulo(count + 1, slides.length))} className="slider-arrow slider-arrow_right" src={arrow} alt=""/>
       )}
-      <div className="slider-pagination">
-        <p>{count + 1}/{slides.length}</p>
-      </div>
+      {showPagination && (
+        <div className="slider-pagination">
+          <p>{count + 1}/{slides.length}</p>
+        </div>
+      )}
     </div>
   );
 }

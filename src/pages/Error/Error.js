@@ -1,4 +1,4 @@
-import Nav from '../../components/Nav'
+import Nav from '../../components/Nav/Nav'
 import '../../style/index.scss'
 import '../Error/Error.scss'
 import { Link } from 'react-router-dom'

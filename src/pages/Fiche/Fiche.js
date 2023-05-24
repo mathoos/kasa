@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { houseList } from '../../data/Data'
-import Nav from '../../components/Nav'
-import Slider from '../../components/Slider'
-import Collapse from '../../components/Collapse'
-import Tag from '../../components/Tag'
-import Footer from '../../components/Footer'
+import Nav from '../../components/Nav/Nav'
+import Slider from '../../components/Slider/Slider'
+import Collapse from '../../components/Collapse/Collapse'
+import Tag from '../../components/Tag/Tag'
+import Footer from '../../components/Footer/Footer'
 import Error from '../Error/Error'
 import '../../style/index.scss'
 import '../Fiche/Fiche.scss'
-import '../../style/Collapse.scss'
+import '../../components/Collapse/Collapse.scss'
 
 function Fiche() {
 

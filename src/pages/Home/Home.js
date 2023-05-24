@@ -1,7 +1,7 @@
-import Nav from '../../components/Nav'
-import Banner from '../../components/Banner'
-import HouseItem from '../../components/houseItem'
-import Footer from '../../components/Footer'
+import Nav from '../../components/Nav/Nav'
+import Banner from '../../components/Banner/Banner'
+import HouseItem from '../../components/HouseItem/HouseItem'
+import Footer from '../../components/Footer/Footer'
 import { houseList } from '../../data/Data'
 import '../../style/index.scss'
 import bannerHome from '../../assets/bannerHome.jpg'
@@ -15,12 +15,9 @@ function Home() {
       <Banner title="Chez vous, partout, et ailleurs" imageSrc={bannerHome}/>
       <div className="shoppingList">       
         {houseList.map(({ id, title, cover }) =>           
-            <Link to={`/fiche/${id}`} key={id}>
-                <HouseItem
-                    title={title}
-                    cover={cover}
-                />                    
-            </Link>   
+          <Link to={`/fiche/${id}`} key={id}>
+            <HouseItem title={title} cover={cover}/>                    
+          </Link>   
         )}      
       </div>
       <Footer/>
